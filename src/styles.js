@@ -10,7 +10,7 @@ padding: 5rem 10rem;
 color: white;
 @media screen and (max-width: 1300px){
         display: block;
-        padding: 2rem 2rem;
+        padding: 2rem 1rem;
         text-align: center;
     }
 `

@@ -74,7 +74,7 @@ const Cards  = styled.div `
     }
 `
 const Card = styled.div `
-    flex-basis: 20rem;
+    flex-basis: 14rem;
     .icon{
         display: flex;
         align-items: center;
@@ -84,6 +84,14 @@ const Card = styled.div `
         background-color: white;
         margin-left: 1rem;
         padding: 1rem;
+    }
+    @media screen and (max-width: 1300px){
+        h3{
+            font-size: 1rem;
+        }
+        p{
+            font-size: 0.8rem;
+        }
     }
 `
 

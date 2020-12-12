@@ -5,6 +5,11 @@ import { motion } from 'framer-motion';
 import {pageAnimation, titleAnimation} from '../animation';
 //Styled
 import styled from 'styled-components';
+//Images
+import linkdin from '../img/linkedin (2).png';
+import github from '../img/github.png';
+import email from '../img/send-mail.png';
+import cv from '../img/portfolio.png';
 
 const ContactUs = () => {
 
@@ -26,7 +31,9 @@ const ContactUs = () => {
                 <Hide>
                     <Link className="contact-me" target = "_blank" to="/linkdin">
                         <Social variants = {titleAnimation}>
-                            <Circle/>
+                            <Circle>
+                                <img src = {linkdin} alt="linkedIn"/>
+                            </Circle>
                                 <h2>Sent me a message </h2>
                         </Social>
                     </Link>
@@ -34,7 +41,9 @@ const ContactUs = () => {
                 <Hide>
                     <Link className="contact-me" target="_blank" to="/github">
                         <Social variants = {titleAnimation}>
-                            <Circle/>
+                            <Circle>
+                                <img  src={github} alt = "github"/>
+                            </Circle>
                                 <h2>See me on Github</h2>
                         </Social>
                     </Link>
@@ -42,22 +51,25 @@ const ContactUs = () => {
                 <Hide>
                     <Link className="contact-me" target="_blank" to="/cv">
                         <Social variants = {titleAnimation}>
-                            <Circle/>
+                            <Circle>
+                                <img src={email} alt="email"/>
+                            </Circle>
                                 <h2>Check my CV</h2>
                         </Social>
                     </Link>
                 </Hide>
                 <Hide>
                     <Social variants = {titleAnimation} onClick = {() => setToggle(!toggle)} >
-                        <Circle/>
+                        <Circle>
+                            <img src = {cv} alt = "cv"/>
+                        </Circle>
                             <h2>Contact me by Email</h2>
                     </Social>                    
                 </Hide>
                 {
                 toggle? 
                     <Hide>
-                        <Social variants = {titleAnimation} onClick = {() => setToggle(!toggle)} >
-                            
+                        <Social variants = {titleAnimation} onClick = {() => setToggle(!toggle)} >                            
                                 <h2 style = {{color: 'crimson', fontWeight: 'bold'}} >tanja120a@gmail.com</h2>
                         </Social>                    
                     </Hide> : ""}
@@ -87,10 +99,16 @@ overflow: hidden;
 cursor: pointer;
 `
 const Circle = styled.div ` 
-width: 2rem;
-height: 2rem;
-background-color: #353535;
+width: 4rem;
+height: 4rem;
+padding: 10px;
+//background-color: #353535;
+background-color: crimson;
 border-radius: 50%;
+img{
+    width: 100%;
+    height: 100%;
+}
 `
 const Social = styled(motion.div) ` 
 display: flex;

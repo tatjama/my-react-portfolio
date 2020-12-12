@@ -72,7 +72,7 @@ const Movie = styled(motion.div) `
 padding-bottom: 10rem;
 .line{
     min-height: 0.5rem;
-    background-color: #23d997;
+    background-color: crimson;
     margin-bottom: 3rem;
 }
 img{
@@ -92,17 +92,25 @@ const Frame1  = styled(motion.div) `
     width: 100%;
     height: 100vh;
     background-color: #fffebf;
+    background-color:#23D997;
+    background-color: magenta;
     z-index: 2;
 `
 
 const Frame2 = styled(Frame1) ` 
     background-color: #ff8efb;
+    background-color: crimson;
+    background-color:#3C819C;
 `
 const Frame3 = styled(Frame1) ` 
     background-color: #8ed2ff;
+    background-color: #ff8efb;
+    background-color: #23D997;
 `
 const Frame4 = styled(Frame1) ` 
     background-color: #8effa0;
+    background-color: #8ed2ff;
+    background-color: #B19434;
 `
 
 export default OurWork;

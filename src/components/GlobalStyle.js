@@ -22,13 +22,13 @@ button{
     font-size: 1.1rem;
     padding: 1rem 2rem;
     cursor: pointer;
-    border: 3px solid #23d997;
+    border: 3px solid crimson;
     background: transparent;
     color: white;
     transition: all 0.5s ease;
     font-family: "Inter", sans-serif;
     &:hover{
-        background: #23d997;
+        background: crimson;
         color: white;
     }    
 }
@@ -48,7 +48,9 @@ button{
     }
     span{
         font-weight: bold;
-        color: #23d997;
+        color: red;
+        //color:#9F2217;
+        color: crimson;
     }
     p{
         padding: 3rem 0rem;

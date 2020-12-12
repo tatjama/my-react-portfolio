@@ -77,7 +77,7 @@ h3{
 .line{
     height: 0.5rem;
     width: 100%;
-    background-color: #23d997;
+    background-color: crimson;
     margin: 1rem 0rem;
 }
 p{

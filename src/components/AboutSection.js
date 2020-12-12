@@ -1,7 +1,9 @@
 import React from 'react';
 //Sections import
-import home1 from '../img/home1.png';
+//import home1 from '../img/home1.png';
 import Wave from '../Wave';
+import women from '../img/bw_women.jpg';
+import notebook from '../img/notebook.jpg'
 // Animation
 import {motion} from 'framer-motion';
 import {titleAnimation, fade, imageAnimation } from '../animation';
@@ -29,7 +31,7 @@ const AboutSection = () => {
                 <motion.button variants = {fade}>Contact Us</motion.button>
             </Description>
             <Image>
-                <motion.img variants = {imageAnimation} src = {home1} alt = "gay-with-camera"/>
+                <motion.img variants = {imageAnimation} src = {notebook} alt = "black-and-white-women"/>
             </Image>
             <Wave/>
         </About>

@@ -1,10 +1,25 @@
 import React from 'react';
 //Import Icons
-import clock from '../img/clock.svg';
-import diaphragm from '../img/diaphragm.svg';
-import money from '../img/money.svg';
-import teamwork from '../img//teamwork.svg';
+//import clock from '../img/clock.svg';
+//import diaphragm from '../img/diaphragm.svg';
+//import money from '../img/money.svg';
+//import teamwork from '../img//teamwork.svg';
 import home2 from '../img/home2.png';
+import women from '../img/bw_women.jpg';
+import keynoard from '../img/keyboard-light.jpg';
+import dm from '../img/dm.svg';
+import softwareIng from '../img/soft-eng.svg';
+import dmRed from '..//img/dm-red.svg';
+import develop from '../img/develop.svg';
+import mobileDevelop from '../img/mobile-development.svg';
+import mobile from '../img/mobile.svg';
+import next from '../img/next.svg';
+import snippet from '../img/snippet.svg';
+import feedback from '../img/feedback.svg';
+import reactIcon from '../img/react (1).svg';
+import research from '../img/research.svg';
+import workingLate from '../img/working_late .svg'
+import wordPress from '../img/wordpress.svg';
 //Styles
 import {About, Description, Image} from '../styles';
 import styled from 'styled-components';
@@ -21,36 +36,108 @@ const ServicesSection = () => {
                 <Cards>
                     <Card>
                         <div className = "icon">
-                            <img src = {clock} alt = "clock-icon"/>
+                            <img src = {dm} alt = "digital-marketing-icon"/>
+                        </div>
                             <h3>Efficient</h3>
+                    </Card>
+                    <Card>
+                        <div className = "icon">
+                            <img alt = "teamwork-icon" src = {feedback}/>
+                            
                         </div>
+                        <h3>Teamwork</h3>
+                    </Card>
+                    <Card>
+                        <div className = "icon">
+                            <img src = {dmRed} alt = "digital-marketing-icon"/>
+                            
+                        </div>
+                        <h3>Diaphragm</h3>
+                    </Card>
+                    <Card>
+                        <div className = "icon">
+                            <img src = {develop} alt = "money-icon"/>
+                            
+                        </div>
+                        <h3>Develop</h3>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </Card>
                     <Card>
                         <div className = "icon">
-                            <img alt = "teamwork-icon" src = {teamwork}/>
-                            <h3>Teamwork</h3>
+                            <img src = {mobileDevelop} alt = "money-icon"/>
+                            
                         </div>
+                        <h3>Affordable</h3>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </Card>
                     <Card>
                         <div className = "icon">
-                            <img src = {diaphragm} alt = "diaphragm-icon"/>
-                            <h3>Diaphragm</h3>
+                            <img src = {mobile} alt = "money-icon"/>
+                            
                         </div>
+                        <h3>Mobile</h3>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </Card>
                     <Card>
                         <div className = "icon">
-                            <img src = {money} alt = "money-icon"/>
-                            <h3>Affordable</h3>
+                            <img src = {next} alt = "money-icon"/>
+                            
                         </div>
+                        <h3>Next.js</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </Card>
+                    <Card>
+                        <div className = "icon">
+                            <img src = {snippet} alt = "money-icon"/>
+                            
+                        </div>
+                        <h3>Snippet</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </Card>
+                    <Card>
+                        <div className = "icon">
+                            <img src = {softwareIng} alt = "money-icon"/>
+                            
+                        </div>
+                        <h3>Software eng</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </Card>
+                    <Card>
+                        <div className = "icon">
+                            <img src = {reactIcon} alt = "money-icon"/>
+                            
+                        </div>
+                        <h3>React</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </Card>
+                    <Card>
+                        <div className = "icon">
+                            <img src = {research} alt = "money-icon"/>
+                            
+                        </div>
+                        <h3>Research</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </Card>
+                    <Card>
+                        <div className = "icon">
+                            <img src = {workingLate} alt = "money-icon"/>
+                            
+                        </div>
+                        <h3>Working late</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </Card>
+                    <Card>
+                        <div className = "icon">
+                            <img src = {wordPress} alt = "money-icon"/>
+                            
+                        </div>
+                        <h3>WordPress</h3>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </Card>
                 </Cards>                
             </Description>
             <Image>
-                <img src = {home2} alt = "camera"/>
+                <img src = {keynoard} alt = "camera"/>
             </Image>
 
         </Service>
@@ -76,6 +163,7 @@ const Cards  = styled.div `
 const Card = styled.div `
     flex-basis: 14rem;
     .icon{
+        padding: 1rem 1rem;
         display: flex;
         align-items: center;
     }

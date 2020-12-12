@@ -12,27 +12,33 @@ const FaqSection = () => {
     const [ element, controls ] = UseScroll();
     return(
         <Faq variants = { scrollRevealer } ref = {element} animate = {controls} initial = "hidden">
-            <h2>Any Questions <span>FAQ</span></h2>
+            <h2>Hight <span> quality </span> service</h2>
             <AnimateSharedLayout>
-                <Toggle title = "How to start?">
+                <Toggle title = "Web development">
                         <div className = "answer" >
                             <p>Lorem ipsum dolor sit amet.</p>
                             <p>Lorem ipsum, dolor sit amet conscetetur adipisic Necessitatibus, neque.</p>
                         </div>                  
                 </Toggle>
-                <Toggle title = "Daily Schedule.">
+                <Toggle title = "Web design.">
                         <div className = "answer" >
                             <p>Lorem ipsum dolor sit amet.</p>
                             <p>Lorem ipsum, dolor sit amet conscetetur adipisic Necessitatibus, neque.</p>
                         </div>
                 </Toggle>
-                <Toggle title = "Different payment methods.">
+                <Toggle title = "Graphic design.">
                         <div className = "answer" >
                             <p>Lorem ipsum dolor sit amet.</p>
                             <p>Lorem ipsum, dolor sit amet conscetetur adipisic Necessitatibus, neque.</p>
                         </div>
                 </Toggle>
-                <Toggle title = "What products do you offer?">
+                <Toggle title = "Search engine optimisation">
+                        <div className = "answer" >
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum, dolor sit amet conscetetur adipisic Necessitatibus, neque.</p>
+                        </div>
+                </Toggle>
+                <Toggle title = "Digital marketing.">
                         <div className = "answer" >
                             <p>Lorem ipsum dolor sit amet.</p>
                             <p>Lorem ipsum, dolor sit amet conscetetur adipisic Necessitatibus, neque.</p>
@@ -45,9 +51,7 @@ const FaqSection = () => {
 
 const Faq = styled(About) `
     display: block;
-    span{
-        display: block;
-    }
+    
     h2{
         padding-bottom: 2rem;
         font-weight: lighter;

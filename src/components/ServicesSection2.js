@@ -24,7 +24,7 @@ const ServicesSection1 = () => {
     return(
         <Service variants = { scrollRevealer } animate = { controls } initial = "hidden" ref = {element}>
             <Description>
-                <h2>Hight <span>quality</span> tehnology.</h2>
+                <h2>Modern tehnology <span> skills</span>.</h2>
                 <Cards>
                     <Card>
                         <div className = "icon">

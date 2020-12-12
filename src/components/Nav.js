@@ -71,7 +71,7 @@ const StyledNav = styled.nav `
         padding-left: 10rem;
         position: relative;
     }
-    @media screen and (max-width: 1300px){
+    @media screen and (max-width: 1000px){
         flex-direction: column;
         padding: 2rem 1rem;
         #logo{
@@ -95,7 +95,7 @@ const Line = styled(motion.div) `
     position: absolute;
     bottom: -80%;
     left: 60%;
-    @media screen and (max-width: 1300px){
+    @media screen and (max-width: 1000px){
         left: 30%;        
     }
 `

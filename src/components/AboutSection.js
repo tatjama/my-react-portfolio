@@ -26,7 +26,7 @@ const AboutSection = () => {
                         <motion.h2 variants = {titleAnimation}> true.</motion.h2>
                     </Hide>
                 </motion.div>                
-                <motion.p variants = {fade}>Contact me for any idea you have regarding web development, digital marketing and search engine optimization
+                <motion.p variants = {fade}>Contact me for any idea you have regarding web development, design, digital marketing and search engine optimization
                 </motion.p>
                 <Link to="/contact">
                     <motion.button variants = {fade}>Contact Me</motion.button>

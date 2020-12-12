@@ -8,7 +8,7 @@ align-items: center;
 justify-content: space-around;
 padding: 5rem 10rem;
 color: white;
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1000px){
         display: block;
         padding: 2rem 1rem;
         text-align: center;
@@ -33,8 +33,14 @@ flex: 1;
 overflow: hidden;
 img{
     width: 100%;
-    height: 80vh;
+    height: 50vh;
     object-fit: cover;
+}
+@media screen and (max-width: 1300px){
+    height: 40vh;
+}
+@media screen and (max-width:1000px){
+    height: 100%;
 }
 `
 export const Hide = styled.div`

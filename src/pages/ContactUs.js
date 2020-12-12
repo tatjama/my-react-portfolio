@@ -23,13 +23,13 @@ const ContactUs = () => {
                 <Hide>
                     <Social variants = {titleAnimation}>
                         <Circle/>
-                            <h2>Sent Us A Message.</h2>
+                            <h2>Sent Me A Message.</h2>
                     </Social>
                 </Hide>
                 <Hide>
                     <Social variants = {titleAnimation}>
                         <Circle/>
-                            <h2>Sent Us E-mail.</h2>
+                            <h2>Sent Me E-mail.</h2>
                     </Social>
                 </Hide>
                 <Hide>
@@ -63,8 +63,8 @@ const Hide = styled.div `
 overflow: hidden;
 `
 const Circle = styled.div ` 
-width: 3rem;
-height: 3rem;
+width: 2rem;
+height: 2rem;
 background-color: #353535;
 border-radius: 50%;
 `
@@ -73,6 +73,7 @@ display: flex;
 align-items: center;
 h2{
     margin: 2rem;
+    font-size: 2rem;
 }
 `
 

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 //Animations
 import { motion } from 'framer-motion';
 import {pageAnimation, titleAnimation} from '../animation';
@@ -6,6 +7,8 @@ import {pageAnimation, titleAnimation} from '../animation';
 import styled from 'styled-components';
 
 const ContactUs = () => {
+
+    const [toggle, setToggle] = useState(false)
     return(
         <ContactStyle
             variants = {pageAnimation} 
@@ -21,24 +24,44 @@ const ContactUs = () => {
             </Title>
             <div>
                 <Hide>
-                    <Social variants = {titleAnimation}>
-                        <Circle/>
-                            <h2>Sent Me A Message.</h2>
-                    </Social>
+                    <Link className="contact-me" target = "_blank" to="/linkdin">
+                        <Social variants = {titleAnimation}>
+                            <Circle/>
+                                <h2>Sent me a message </h2>
+                        </Social>
+                    </Link>
                 </Hide>
                 <Hide>
-                    <Social variants = {titleAnimation}>
-                        <Circle/>
-                            <h2>Sent Me E-mail.</h2>
-                    </Social>
+                    <Link className="contact-me" target="_blank" to="/github">
+                        <Social variants = {titleAnimation}>
+                            <Circle/>
+                                <h2>See me on Github</h2>
+                        </Social>
+                    </Link>
                 </Hide>
                 <Hide>
-                    <Social variants = {titleAnimation}>
-                        <Circle/>
-                            <h2>Social Media.</h2>
-                    </Social>
+                    <Link className="contact-me" target="_blank" to="/cv">
+                        <Social variants = {titleAnimation}>
+                            <Circle/>
+                                <h2>Check my CV</h2>
+                        </Social>
+                    </Link>
                 </Hide>
-            </div>
+                <Hide>
+                    <Social variants = {titleAnimation} onClick = {() => setToggle(!toggle)} >
+                        <Circle/>
+                            <h2>Contact me by Email</h2>
+                    </Social>                    
+                </Hide>
+                {
+                toggle? 
+                    <Hide>
+                        <Social variants = {titleAnimation} onClick = {() => setToggle(!toggle)} >
+                            
+                                <h2 style = {{color: 'crimson', fontWeight: 'bold'}} >tanja120a@gmail.com</h2>
+                        </Social>                    
+                    </Hide> : ""}
+               </div>
         </ContactStyle>
 
     )
@@ -61,6 +84,7 @@ margin-bottom: 4rem;
 `
 const Hide = styled.div ` 
 overflow: hidden;
+cursor: pointer;
 `
 const Circle = styled.div ` 
 width: 2rem;

@@ -20,13 +20,13 @@ const FaqSection = () => {
                             <p>Lorem ipsum, dolor sit amet conscetetur adipisic Necessitatibus, neque.</p>
                         </div>                  
                 </Toggle>
-                <Toggle title = "Web design.">
+                <Toggle title = "Web design">
                         <div className = "answer" >
                             <p>Lorem ipsum dolor sit amet.</p>
                             <p>Lorem ipsum, dolor sit amet conscetetur adipisic Necessitatibus, neque.</p>
                         </div>
                 </Toggle>
-                <Toggle title = "Graphic design.">
+                <Toggle title = "Graphic design">
                         <div className = "answer" >
                             <p>Lorem ipsum dolor sit amet.</p>
                             <p>Lorem ipsum, dolor sit amet conscetetur adipisic Necessitatibus, neque.</p>
@@ -38,7 +38,7 @@ const FaqSection = () => {
                             <p>Lorem ipsum, dolor sit amet conscetetur adipisic Necessitatibus, neque.</p>
                         </div>
                 </Toggle>
-                <Toggle title = "Digital marketing.">
+                <Toggle title = "Digital marketing">
                         <div className = "answer" >
                             <p>Lorem ipsum dolor sit amet.</p>
                             <p>Lorem ipsum, dolor sit amet conscetetur adipisic Necessitatibus, neque.</p>

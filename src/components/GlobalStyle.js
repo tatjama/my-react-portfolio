@@ -58,6 +58,9 @@ button{
         font-size: 1.2rem;
         line-height: 150%;
     }
+    .contact-me{
+        text-decoration: none;
+    }
     @media screen and (max-width: 1300px){
         h2{
             font-size: 3rem;

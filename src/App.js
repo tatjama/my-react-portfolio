@@ -31,7 +31,10 @@ function App() {
           </Route>
           <Route path = "/contact">
             <ContactUs/>
-          </Route>         
+          </Route>     
+          <Route path = "/linkdin" render = {() => (window.location = "https://www.linkedin.com/in/tatjana-markovi%C4%87-919501189/")}/>    
+          <Route path = "/github" render = {() => (window.location = "https://github.com/tatjama")}/>
+          <Route path = "/cv" render = {() => (window.location ="./dowloads/tatjana_markovic_cv.pdf")} />
         </Switch>    
       </AnimatePresence>
     </div>

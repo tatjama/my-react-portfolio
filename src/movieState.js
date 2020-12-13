@@ -7,7 +7,7 @@ import player1 from './img/music-player.jpg';
 import player2 from './img/player.png';
 import rock1 from './img/desktop-rules-modal-bonus.jpg';
 import rock2 from './img/desktop-step-1-bonus.jpg';
-import fullfun1 from './img/fullfun.png';
+import fullfun1 from './img/fullfun1.png';
 import fullfun2 from './img/ff_background_srednji.png';
 
 

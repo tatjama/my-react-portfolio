@@ -43,8 +43,23 @@ button{
          font-weight: bold;
          font-size: 2rem;
     }
+    h5{
+        font-size:1.5rem;
+        padding: 3rem 0 1rem 0;
+    }
+    h6{
+        font-size: 1.5rem;
+        padding-top: 3rem;
+    }
     a{
         font-size: 1.1rem;
+    }
+    
+    li{
+        font-size:1.2rem;
+        line-height:150%;
+        color:#ccc;
+        padding: 0.2rem 0;
     }
     span{
         font-weight: bold;

@@ -67,12 +67,12 @@ const ContactUs = () => {
                     </Social>                    
                 </Hide>
                 {
-                toggle? 
+                toggle&& 
                     <Hide>
                         <Social variants = {titleAnimation} onClick = {() => setToggle(!toggle)} >                            
                                 <h2 style = {{color: 'crimson', fontWeight: 'bold'}} >tanja120a@gmail.com</h2>
                         </Social>                    
-                    </Hide> : ""}
+                    </Hide> }
                </div>
         </ContactStyle>
 

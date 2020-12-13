@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import { pageAnimation} from '../animation';
 import BtaSection from '../components/BtaSection';
 import ETicket from '../components/ETicket';
+import PlayerSection from '../components/PlayerSection';
 
 const MovieDetail = () => {
     const history = useHistory();
@@ -139,7 +140,8 @@ const AwardContent = ({title, description}) => {
         <AwardStyle>
             <h3>{title}</h3>
             <div className = "line"></div>
-           {(description === "bta")? <BtaSection/>: (description === "eticket")?  <ETicket/> : <div>Nista</div>
+           {(description === "bta")? <BtaSection/>: (description === "eticket")?  <ETicket/> 
+           : (description === "player")? <PlayerSection/> : <div>Nista</div>
            }        
         </AwardStyle>
     )

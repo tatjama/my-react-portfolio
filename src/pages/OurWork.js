@@ -3,9 +3,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 //Images
-import athlete from '../img/athlete-small.png';
-import goodtimes from '../img/goodtimes-small.png';
-import theracer from '../img/theracer-small.png';
+import suitecases from '../img/suitcases.png';
+import eticket1 from '../img/e-ticket1.png';
+import player from '../img/music-player.jpg';
+import rock from '../img/desktop-step-1.jpg';
+import fullfun from '../img/fullfun.png';
 //Animations
 import {motion} from 'framer-motion';
 import {pageAnimation, fade, imageAnimation, lineAnimation, slider, sliderContainer } from '../animation';
@@ -14,7 +16,9 @@ import ScrollTop from '../components/ScrollTop';
 
 const OurWork = () => {
     const [ element, controls ] = UseScroll();
+    const [ element1, controls1 ] = UseScroll();
     const [ element2, controls2 ] = UseScroll();
+    const [ element3, controls3 ] = UseScroll();
     return(
         <Work 
             variants = {pageAnimation} 
@@ -30,26 +34,40 @@ const OurWork = () => {
                 <Frame4 variants = {slider} ></Frame4>
             </motion.div>
             <Movie>
-                <motion.h1 variants = { fade }>The Athlete</motion.h1>
+                <motion.h1 variants = { fade }>Business Travel Agency</motion.h1>
                 <motion.div variants = { lineAnimation } className = "line"></motion.div>
-                <Link to = "/work/the-athlete">
+                <Link to = "/work/bta">
                     <Hide>
-                        <motion.img variants = {imageAnimation} src = {athlete} alt = "the-athlete"/>
+                        <motion.img variants = {imageAnimation} src = {suitecases} alt = "suitecases"/>
                     </Hide>
                 </Link>
             </Movie>
             <Movie variants = { fade } animate = { controls } initial = "hidden" ref = {element}>
-                <h1>The Racer</h1>
+                <h1>E-tickets</h1>
                 <motion.div variants = {lineAnimation} className = "line"></motion.div>
-                <Link to = "/work/the-racer">
-                    <img src = {theracer} alt = "the-racer"/>
+                <Link to = "/work/e-ticket">
+                    <img src = {eticket1} alt = "actor"/>
+                </Link>
+            </Movie>
+            <Movie variants = { fade } animate = { controls1 } initial = "hidden" ref = {element1}>
+                <h1>Music Player</h1>
+                <motion.div variants = {lineAnimation} className = "line"></motion.div>
+                <Link to = "/work/music-player">
+                    <img src = {player} alt = "long-play"/>
                 </Link>
             </Movie>
             <Movie variants = { fade } animate = {controls2} initial = "hidden" ref = { element2 }>
-                <h1>Good Times</h1>
+                <h1>Rock-Paper-Scissors</h1>
                 <motion.div variants = { lineAnimation }  className = "line"></motion.div>
-                <Link to = "/work/good-times">
-                    <img src = {goodtimes} alt = "good-time"/>
+                <Link to = "/work/rock-paper-scissors">
+                    <img src = {rock} alt = "rock-paper-scissors"/>
+                </Link>
+            </Movie>
+            <Movie variants = { fade } animate = {controls3} initial = "hidden" ref = { element3 }>
+                <h1>Full Fun</h1>
+                <motion.div variants = { lineAnimation }  className = "line"></motion.div>
+                <Link to = "/work/full-fun">
+                    <img src = {fullfun} alt = "full-fun"/>
                 </Link>
             </Movie>
             <ScrollTop/>

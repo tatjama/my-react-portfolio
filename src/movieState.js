@@ -1,18 +1,24 @@
 //Import Images
-import athlete from "./img/athlete-small.png";
-import goodtimes from "./img/goodtimes-small.png";
-import theracer from "./img/theracer-small.png";
-import athlete2 from "./img/athlete2.png";
-import goodtimes2 from "./img/good-times2.jpg";
-import theracer2 from "./img/the-racer2.jpg";
+import bta1 from "./img/suitcases.png";
+import bta2 from "./img/enjoy.png";
+import eticket1 from './img/e-ticket1.png';
+import eticket2 from './img/e-ticket2.png';
+import player1 from './img/music-player.jpg';
+import player2 from './img/player.png';
+import rock1 from './img/desktop-rules-modal-bonus.jpg';
+import rock2 from './img/desktop-step-1-bonus.jpg';
+import fullfun1 from './img/fullfun.png';
+import fullfun2 from './img/ff_background_srednji.png';
+
+
 
 export const MovieState = () => {
   return [
     {
-      title: "The Athlete",
-      mainImg: athlete,
-      secondaryImg: athlete2,
-      url: "/work/the-athlete",
+      title: "Business Travel Agency",
+      mainImg: bta1,
+      secondaryImg: bta2,
+      url: "/work/bta",
       awards: [
         {
           title: "Truly A masterpiece",
@@ -32,10 +38,10 @@ export const MovieState = () => {
       ],
     },
     {
-      title: "Good Times",
-      mainImg: goodtimes,
-      url: "/work/good-times",
-      secondaryImg: goodtimes2,
+      title: "E-ticket",
+      mainImg: eticket1,
+      url: "/work/e-ticket",
+      secondaryImg: eticket2,
       awards: [
         {
           title: "Truly A masterpiece",
@@ -55,10 +61,56 @@ export const MovieState = () => {
       ],
     },
     {
-      title: "The Racer",
-      mainImg: theracer,
-      url: "/work/the-racer",
-      secondaryImg: theracer2,
+      title: "Music Player",
+      mainImg: player1,
+      url: "/work/music-player",
+      secondaryImg: player2,
+      awards: [
+        {
+          title: "Truly A masterpiece",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+        {
+          title: "Fresh look on a brutal sport.",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+        {
+          title: "It’s okay lmao.",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+      ],
+    },
+    {
+      title: "Full Fun",
+      mainImg: fullfun2,
+      url: "/work/full-fun",
+      secondaryImg: fullfun1,
+      awards: [
+        {
+          title: "Truly A masterpiece",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+        {
+          title: "Fresh look on a brutal sport.",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+        {
+          title: "It’s okay lmao.",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+      ],
+    },
+    {
+      title: "Rock-Paper-Scissors",
+      mainImg: rock2,
+      url: "/work/rock-paper-scissors",
+      secondaryImg: rock1,
       awards: [
         {
           title: "Truly A masterpiece",

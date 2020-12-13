@@ -57,6 +57,13 @@ img{
     height: 70vh;
     object-fit: cover;
 }
+@media screen and (max-width: 800px){
+    h2{
+        font-size: 2.6rem;
+        width: 100%;
+        text-align: center;
+    }
+}
 `
 const Awards = styled.div `
 min-height: 80vh;
@@ -82,6 +89,9 @@ h3{
 }
 p{
     padding: 2rem 0rem;
+}
+@media screen and (max-width:800px){
+    padding: 2rem 1rem;    
 }
 `
 const ImageDisplay = styled.div `

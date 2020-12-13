@@ -154,69 +154,7 @@ export const MovieState = () => {
       ],
       content:{
         title:"About",
-        section: `Rock-paper-scissorsis advanced challenge game by Frontend Mentor.
-             Challenge is to build out this Rock, Paper, Scissors game and get it looking as close to the 
-             design as possible. We can use any tools we like to help us complete the challenge.Avatar - Users should be able to:                           
-                 <ul>  
-                                                  
-                     <li>View the optimal layout for the game depending on their device's screen size,</li>
-                     <li>Play Rock, Paper, Scissors against the computer,</li>
-                     <li>Maintain the state of the score after refreshing the browser (optional),</li>                                    
-                     <li>Bonus: Play Rock, Paper, Scissors, Lizard, Spock against the computer (optional)</li>
-                 </ul>  
-         <h3>Rules:</h3>
-         <p>If the player wins, they gain 1 point. If the computer wins, the player loses one point.</p>
-          <ul>
-              <li>
-                 Original
-                 <ul>
-                     <li>Paper beats Rock</li>
-                     <li>Rock beats Scissors</li>
-                     <li>Scissors beats Paper</li>
-                 </ul>
-              </li>
-              <li>
-                  Bonus
-                  <ul>
-                      <li>Scissors beats Paper</li>
-                      <li>Paper beats Rock</li>
-                      <li>Rock beats Lizard</li>
-                      <li>Lizard beats Spock</li>
-                      <li>Spock beats Scissors</li>
-                      <li>Scissors beats Lizard</li>
-                      <li>Paper beats Spock</li>
-                      <li>Rock beats Scissors</li>
-                      <li>Lizard beats Paper</li>
-                      <li>Spock beats Rock </li>
-                  </ul>
-              </li>                             
-          </ul>   
-     
-         <h3>Descriptions - Challenge:</h3>
-         <ol>
-             <li>Layout
-                 <ul>The designs were created to the following widths:
-                     <li>
-                         Mobile: 375px
-                     </li>
-                     <li> Desktop: 1366px
-                     </li>
-                 </ul>                                
-             </li>
-     
-             <li>Colors, fonts etc get from the Frontend Mentor style file                                
-             </li>
-             <li>Design
-                 <br/>
-                 Task is to build out the project to the given designs.
-                 We can either choose the original designs for the simpler version or the bonus designs for the harder
-                  version, both mobile and desktop . 
-                 <br/>
-                 The designs are in JPG static format. This will mean that we need to use our best judgment for styles
-                  such as font-size, padding and margin. This should show how train is our eye to perceive differences in 
-                  spacings and sizes. 
-             
-        `
+        section: "rock"
       }
     },
   ];

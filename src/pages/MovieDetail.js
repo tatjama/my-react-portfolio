@@ -5,10 +5,12 @@ import {MovieState} from '../movieState';
 //Animations
 import { motion } from 'framer-motion';
 import { pageAnimation} from '../animation';
+//Section-pages
 import BtaSection from '../components/BtaSection';
 import ETicket from '../components/ETicket';
 import PlayerSection from '../components/PlayerSection';
 import FullFunSection from '../components/FullFunSection';
+import RockPaperScissorsSection from '../components/RockPaperScissorsSection';
 
 const MovieDetail = () => {
     const history = useHistory();
@@ -142,7 +144,8 @@ const AwardContent = ({title, description}) => {
             <h3>{title}</h3>
             <div className = "line"></div>
            {(description === "bta")? <BtaSection/>: (description === "eticket")?  <ETicket/> 
-           : (description === "player")? <PlayerSection/> : (description === "fullfun") ? <FullFunSection/> : <div></div>
+           : (description === "player")? <PlayerSection/> : (description === "rock") ? <RockPaperScissorsSection/>
+           : (description === "fullfun") ? <FullFunSection/> : <div></div>
            }        
         </AwardStyle>
     )

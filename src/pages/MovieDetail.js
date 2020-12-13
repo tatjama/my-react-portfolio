@@ -5,6 +5,8 @@ import {MovieState} from '../movieState';
 //Animations
 import { motion } from 'framer-motion';
 import { pageAnimation} from '../animation';
+import BtaSection from '../components/BtaSection';
+import ETicket from '../components/ETicket';
 
 const MovieDetail = () => {
     const history = useHistory();
@@ -26,8 +28,13 @@ const MovieDetail = () => {
                 </HeadLine>     
                 <Awards>
                     {movie.awards.map((award) => (
-                        <Award title = {award.title} description = {award.description} key = {award.title}/>
+                          <Award title = {award.title} description = {award.description}  key = {award.title}/>
                     ))}
+                    {movie.content &&<AwardContent  
+                        title = {movie.content.title} 
+                        description = {movie.content.section} 
+                        key = {movie.content.title}
+                    />}
                 </Awards>      
                 <ImageDisplay>
                     <img src = {movie.secondaryImg} alt = "movie"/>
@@ -69,14 +76,19 @@ const Awards = styled.div `
 min-height: 80vh;
 margin: 5rem 10rem;
 display: flex;
+flex-wrap: wrap;
 justify-content: space-around;
-align-items: center;
 @media screen and (max-width: 1300px){
     display: block;
     margin: 2rem 2rem;
 }
 `
 const AwardStyle = styled.div `
+
+width: 30%;
+&:last-of-type{
+    width: 100%;
+}
 padding: 5rem;
 h3{
     font-size: 2rem;
@@ -110,6 +122,16 @@ const Award = ({title, description}) => {
             <h3>{title}</h3>
             <div className = "line"></div>
             <p>{description}</p>
+        </AwardStyle>
+    )
+}
+const AwardContent = ({title, description}) => {
+    return(
+        <AwardStyle>
+            <h3>{title}</h3>
+            <div className = "line"></div>
+           {(description === "bta")? <BtaSection/>: (description === "eticket")?  <ETicket/> : <div>Nista</div>
+           }        
         </AwardStyle>
     )
 }

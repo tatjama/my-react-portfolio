@@ -78,7 +78,10 @@ margin: 5rem 10rem;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
-@media screen and (max-width: 1300px){
+@media screen and (max-width:1500px){
+    margin: 5rem 4rem;
+}
+@media screen and (max-width: 1275px){
     display: block;
     margin: 2rem 2rem;
 }
@@ -101,6 +104,12 @@ h3{
 }
 p{
     padding: 2rem 0rem;
+}
+@media screen and (max-width: 1500px){
+    padding: 5rem 2.4rem;
+}
+@media screen and (max-width:1275px){
+    width: 100%;
 }
 @media screen and (max-width:800px){
     padding: 2rem 1rem;    

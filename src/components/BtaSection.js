@@ -4,6 +4,9 @@ const BtaSection = () => {
     return(
         <div>
                         <h5>Avatars:</h5>
+                        <p>Only registered users can use E-shop. To become register user, please go to signUp page and fill up form.
+                            <br/>
+                             You can, also,  use default user or admin credentials for demo purpose</p>
                         <ol>
                             <li><h6> User </h6>
                                 <p>Default value: email: user@user.com, password: UserUser1</p>

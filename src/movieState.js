@@ -127,9 +127,7 @@ export const MovieState = () => {
       ],
       content: {
         title: "About",
-        section: `The search engine optimization (SEO) gave great results. Four months after the setup, 
-        the site came out on top for keywords. Digital marketing - Facebook pixel, Google ads, Hosting,                                                             
-            E-mail server, DNS, Responsive design, Copywriting`
+        section: "fullfun"
       }
     },
     {

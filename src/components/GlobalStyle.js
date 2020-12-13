@@ -59,7 +59,8 @@ button{
         font-size:1.2rem;
         line-height:150%;
         color:#ccc;
-        padding: 0.2rem 0;
+        padding: 0.2rem 0rem 0.2rem 1rem;
+        margin-left: 2rem;
     }
     span{
         font-weight: bold;
@@ -79,6 +80,12 @@ button{
     @media screen and (max-width: 1300px){
         h2{
             font-size: 3rem;
+        }
+    }
+    @media screen and (max-width: 650px){
+        li{
+            margin-left: 1rem;
+            padding: 0.2rem 0rem 0.2rem 0.5rem;
         }
     }
 `

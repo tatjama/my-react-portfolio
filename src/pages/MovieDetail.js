@@ -8,6 +8,7 @@ import { pageAnimation} from '../animation';
 import BtaSection from '../components/BtaSection';
 import ETicket from '../components/ETicket';
 import PlayerSection from '../components/PlayerSection';
+import FullFunSection from '../components/FullFunSection';
 
 const MovieDetail = () => {
     const history = useHistory();
@@ -141,7 +142,7 @@ const AwardContent = ({title, description}) => {
             <h3>{title}</h3>
             <div className = "line"></div>
            {(description === "bta")? <BtaSection/>: (description === "eticket")?  <ETicket/> 
-           : (description === "player")? <PlayerSection/> : <div>Nista</div>
+           : (description === "player")? <PlayerSection/> : (description === "fullfun") ? <FullFunSection/> : <div></div>
            }        
         </AwardStyle>
     )

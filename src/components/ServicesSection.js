@@ -89,14 +89,12 @@ p{
 const Cards  = styled.div `
     display: flex;
     flex-wrap: wrap;
-    @media screen and (max-width: 1300){
-        justify-content: center;
-    }
+    justify-content:space-evenly;
 `
 const Card = styled.div `
-    flex-basis: 16rem;
+    width: 190px;
     .icon{
-        padding: 2rem 1rem;
+        padding: 2rem 2rem;
         display: flex;
         align-items: center;
     }
@@ -107,11 +105,16 @@ const Card = styled.div `
         padding: 1rem;
         text-align: center;
     }
-    @media screen and ( max-width: 1300px) {
-        width: 150px;
-        flex-basis: 12.5rem;
+    @media screen and (max-width:1535px){
+        width: 170px;
         .icon{
-            width: 110px;
+            padding:2rem 1rem;
+        }
+    }
+    @media screen and ( max-width: 1080px) {
+        width: 120px;
+        .icon{
+            width: 120px;
             img{
                 width: 100px;
                 height: 66px;
@@ -128,7 +131,7 @@ const Card = styled.div `
         
     }
     @media screen and (max-width: 420px){
-        flex-basis: 10rem;
+        
     }
 `
 

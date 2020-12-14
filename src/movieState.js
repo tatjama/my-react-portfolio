@@ -34,8 +34,11 @@ export const MovieState = () => {
         },
         {
           title: "Authorization:",
-          description:
-            "You can use default user or admin credentials for demo purpose USER: email: user@user.com, password: UserUser1,    ADMIN: email: admin@admin.com, password: AdminAdmin1",
+          description: "You can use default user or admin credentials for demo purpose",
+          usertitle: " USER:",
+          user: " email: user@user.com, pass: UserUser1,",
+          admintitle: "ADMIN:",
+          admin: " email: admin@admin.com, pass: AdminAdmin1",
         },        
       ],
       content: 
@@ -55,7 +58,7 @@ export const MovieState = () => {
         {
           title: "Truly A masterpiece",
           description:
-            `E-ticket is bilingual(English/Serbian) CRUD application that allow users to see, create and update information about 
+            `E-ticket is bilingual(English/Serbian) application that allow users to see, create and update (CRUD) information about 
             performances, and to buy or to sell tickets for theatre.`,
         },
         {
@@ -65,8 +68,12 @@ export const MovieState = () => {
         },
         {
           title: "Authorization:",
-          description:
-            "You can use default user or admin credentials for demo purpose USER: email: user@user.com, password: UserUser1,    ADMIN: email: admin@admin.com, password: AdminAdmin1",
+          description: "You can use default user or admin credentials for demo purpose",
+          usertitle: " USER:",
+          user: " email: user@user.com, pass: UserUser1,",
+          admintitle: "ADMIN:",
+          admin: " email: admin@admin.com, pass: AdminAdmin1",
+        
         },
       ],
       content: 

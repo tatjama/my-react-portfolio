@@ -32,7 +32,15 @@ const MovieDetail = () => {
                 </HeadLine>     
                 <Awards>
                     {movie.awards.map((award) => (
-                          <Award title = {award.title} description = {award.description}  key = {award.title}/>
+                          <Award 
+                            title = {award.title} 
+                            description = {award.description} 
+                            usertitle = {award.usertitle}
+                            user = {award.user} 
+                            admintitle = {award.admintitle}
+                            admin = {award.admin} 
+                            key = {award.title}
+                          />
                     ))}
                     {movie.content &&<AwardContent  
                         title = {movie.content.title} 
@@ -92,7 +100,7 @@ justify-content: space-around;
 `
 const AwardStyle = styled.div `
 
-width: 30%;
+width: 33%;
 &:last-of-type{
     width: 100%;
 }
@@ -121,8 +129,8 @@ li{
  }
  .cta{
     position: fixed;
-    top: 13rem;
-    right: 5rem
+    top: 12rem;
+    right: 3rem
 }
 @media screen and (max-width: 1500px){
     padding: 5rem 2.4rem;
@@ -164,12 +172,16 @@ img{
 `
 
 //Award component
-const Award = ({title, description}) => {
+const Award = ({title, description, usertitle, user, admintitle, admin}) => {
     return(
         <AwardStyle>
             <h3>{title}</h3>
             <div className = "line"></div>
             <p>{description}</p>
+            {user &&<> 
+            <div>{usertitle}<br/>{user}</div>
+            <div>{admintitle}<br/>{admin}</div>
+            </>}
         </AwardStyle>
     )
 }

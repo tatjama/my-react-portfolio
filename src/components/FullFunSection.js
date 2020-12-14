@@ -1,8 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FullFunSection = () => {
     return(
         <div>
+            <Link to='/fullfun' target='_blank'>
+                <button className = 'cta'>Go to App</button>
+            </Link>
             <h5>Tasks:</h5>
                         <ol>                            
                             <li>SEO - The search engine optimization gave great results. Four months after the setup, the site came out on top for keywords

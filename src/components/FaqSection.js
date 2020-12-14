@@ -76,6 +76,7 @@ const Faq = styled(About) `
         p{
             padding: 1rem 0rem;
         }
+        text-align: start;
     }
 `
 

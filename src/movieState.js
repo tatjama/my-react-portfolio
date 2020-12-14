@@ -40,7 +40,7 @@ export const MovieState = () => {
       ],
       content: 
         {
-          title: "About:",
+          title: "About: ",
           section: "bta"
          
         },
@@ -64,14 +64,14 @@ export const MovieState = () => {
             "JavaScript, HTML, CSS, Sass, jQuery, responsive design, session storage and local storage",
         },
         {
-          title: "Authorization",
+          title: "Authorization:",
           description:
             "You can use default user or admin credentials for demo purpose USER: email: user@user.com, password: UserUser1,    ADMIN: email: admin@admin.com, password: AdminAdmin1",
         },
       ],
       content: 
         {
-          title: "About:",
+          title: "About: ",
           section:
           "eticket"
         },
@@ -88,17 +88,17 @@ export const MovieState = () => {
             "Play it again, Sem! is music player App",
         },
         {
-          title: "Technics",
+          title: "Technics:",
           description:
             "React.js, JSX , Sass, responsive design",
         },
         {
-          title: "Authorization",
+          title: "Authorization:",
           description:
             "No authorization",
         }],
         content:{
-          title: "About:",
+          title: "About: ",
           section: "player"
         }
       ,
@@ -126,7 +126,7 @@ export const MovieState = () => {
         },
       ],
       content: {
-        title: "About",
+        title: "About: ",
         section: "fullfun"
       }
     },
@@ -142,7 +142,7 @@ export const MovieState = () => {
             "Play game against a computer. If the player wins, they gain 1 point. If the computer wins, the player loses one point",
         },
         {
-          title: "Technics",
+          title: "Technics:",
           description:
             "JavaScript, HTML, CSS, Session for keep score, responsive design.",
         },
@@ -153,7 +153,7 @@ export const MovieState = () => {
         },
       ],
       content:{
-        title:"About",
+        title:"About: ",
         section: "rock"
       }
     },

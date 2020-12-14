@@ -16,32 +16,37 @@ const FaqSection = () => {
             <AnimateSharedLayout>
                 <Toggle title = "Web development">
                         <div className = "answer" >
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum, dolor sit amet conscetetur adipisic Necessitatibus, neque.</p>
+                            <p>Good quality web development will make the website stand out from competitors and attract more business.
+                                 It is important that the best web development processes are used to maintain the site.</p>
+                            <p>Web development is what makes a website functional and is not just about making it look good. 
+                                If your website isn’t developed and maintained properly it could have a negative impact on the business.</p>
                         </div>                  
                 </Toggle>
                 <Toggle title = "Web design">
                         <div className = "answer" >
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum, dolor sit amet conscetetur adipisic Necessitatibus, neque.</p>
+                            <p>As users discover your brand, they need to distinguish what sets you apart and makes you… you.</p>
+
+                            <p>This often requires finding the right balance between compelling content and a design carefully planned to look the part.</p>
                         </div>
                 </Toggle>
                 <Toggle title = "Graphic design">
                         <div className = "answer" >
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum, dolor sit amet conscetetur adipisic Necessitatibus, neque.</p>
+                            <p>Graphic design is an important tool that enhances how you communicate with other people. 
+                                It serves to convey your ideas in a way that is not only effective, but also beautiful.</p>
+                            <p>It makes you look good, professional and credible.</p>
                         </div>
                 </Toggle>
                 <Toggle title = "Search engine optimisation">
                         <div className = "answer" >
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum, dolor sit amet conscetetur adipisic Necessitatibus, neque.</p>
+                            <p>SEO is the practice of increasing both the quality and quantity of website traffic, as well as exposure to your brand, 
+                                through non-paid (also known as "organic") search engine results.</p>
+                            <p>It's as much about people as it is about search engines themselves. One of the biggest advantages of SEO is that it's an inbound marketing strategy.</p>
                         </div>
                 </Toggle>
                 <Toggle title = "Digital marketing">
                         <div className = "answer" >
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum, dolor sit amet conscetetur adipisic Necessitatibus, neque.</p>
+                            <p>Using digital marketing, you can reach an enormous audience in a way that is both cost-effective and measurable.</p>
+                            <p>You can save money and reach more customers for less money than traditional marketing methods.</p>
                         </div>
                 </Toggle>
             </AnimateSharedLayout>

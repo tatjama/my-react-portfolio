@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import styled from "styled-components";
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import {MovieState} from '../movieState';
 //Animations
 import { motion } from 'framer-motion';
@@ -100,6 +100,9 @@ padding: 5rem;
 h3{
     font-size: 2rem;
 }
+.award-toggle{
+    cursor: pointer;
+}
 .line{
     height: 0.5rem;
     width: 100%;
@@ -139,13 +142,26 @@ const Award = ({title, description}) => {
     )
 }
 const AwardContent = ({title, description}) => {
+    const [toggle, setToggle] = useState(false)
+
     return(
-        <AwardStyle>
-            <h3>{title}</h3>
+        <AwardStyle >
+             <Link target="_blank" to = {`/${description}`}>
+                <button className="cta">
+                    Go to App
+                </button>
+            </Link>
+            <h3 className="award-toggle" onClick = {() => setToggle(!toggle)}>
+                
+                {toggle ? <>{title} <span> show less...</span></> : <>{title} <span> show more...</span></>}
+            </h3>
             <div className = "line"></div>
-           {(description === "bta")? <BtaSection/>: (description === "eticket")?  <ETicket/> 
-           : (description === "player")? <PlayerSection/> : (description === "rock") ? <RockPaperScissorsSection/>
-           : (description === "fullfun") ? <FullFunSection/> : <div></div>
+            {toggle && <>
+                {(description === "bta")? <BtaSection/>: (description === "eticket")?  <ETicket/> 
+                : (description === "player")? <PlayerSection/> : (description === "rock") ? <RockPaperScissorsSection/>
+                : (description === "fullfun") ? <FullFunSection/> : <div></div>
+                }
+           </>
            }        
         </AwardStyle>
     )

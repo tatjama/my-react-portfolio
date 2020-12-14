@@ -1,12 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const RockPaperScissorsSection = () => {
     return (
         <div>
-            <Link to='/rock' target='_blank'> 
-                <button className='cta'>Go to App</button>
-            </Link>
             <h5>Avatar:</h5>                        
             <p> Users should be able to:    </p>                           
             <ul>                                   

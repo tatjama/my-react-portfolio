@@ -24,47 +24,44 @@ const ServicesSection = () => {
                     <Card>
                         <div className = "icon">
                             <img src = {js} alt = "digital-marketing-icon"/>
-                            <h3>Javascript</h3>
+                            
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>   
+                        <h3>Javascript</h3>   
                     </Card>
                     <Card>
                         <div className = "icon">
                             <img alt = "teamwork-icon" src = {react}/>
-                            <h3>React</h3>
+                            
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>React</h3>
                     </Card>
                     <Card>
                         <div className = "icon">
                             <img src = {css} alt = "digital-marketing-icon"/>
-                            <h3>CSS</h3>
+                            
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>CSS</h3>
                     </Card>
                     <Card>
                         <div className = "icon">
                             <img src = {sass} alt = "money-icon"/>
-                            <h3>SASS</h3>
+                            
                         </div>
-                        
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>SASS</h3>
                     </Card>
                     <Card>
                         <div className = "icon">
                             <img src = {dm} alt = "money-icon"/>
-                            <h3>Marketing</h3>
+                            
                         </div>
-                        
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>Marketing</h3>
                     </Card>
                     <Card>
                         <div className = "icon">
                             <img src = {next} alt = "money-icon"/>
-                            <h3>Next</h3>
+                            
                         </div>
-                        
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>Next</h3>
                     </Card>
                     
                 </Cards>                
@@ -77,6 +74,7 @@ const ServicesSection = () => {
     )
 }
 const Service = styled(About)`
+padding: 5rem 5rem;
 h2{
     padding-bottom: 5rem;
 }
@@ -94,39 +92,41 @@ const Cards  = styled.div `
     }
 `
 const Card = styled.div `
-    flex-basis: 14rem;
+    flex-basis: 16rem;
     .icon{
-        padding: 1rem 1rem;
+        padding: 2rem 1rem;
         display: flex;
         align-items: center;
     }
     h3{
         color: black;
         background-color: white;
-        margin-left: 1rem;
+        margin-right: 1rem;
         padding: 1rem;
-        min-width: 105px;
         text-align: center;
     }
-    @media screen and (max-width: 1300px){
+    @media screen and ( max-width: 1300px) {
+        width: 150px;
+        flex-basis: 12.5rem;
+        .icon{
+            width: 110px;
+            img{
+                width: 100px;
+                height: 66px;
+            }
+        }
         h3{
             font-size: 1rem;
             padding: 1rem 0.5rem;
+            width: 100px;
         }
         p{
             font-size: 0.8rem;
         }
-        .icon {
-            width: 150px;
-            height: 50px;
-            img{
-                width: 75px;
-                height: 50px;
-            }
-            h3{
-                min-width: 70px
-            }
-        }
+        
+    }
+    @media screen and (max-width: 420px){
+        flex-basis: 10rem;
     }
 `
 

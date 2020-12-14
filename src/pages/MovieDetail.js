@@ -112,15 +112,47 @@ h3{
 p{
     padding: 2rem 0rem;
 }
+li{
+        font-size:1.2rem;
+        line-height:150%;
+        color:#ccc;
+        padding: 0.2rem 0rem 0.2rem 1rem;
+        margin-left: 2rem;
+ }
+ .cta{
+    position: fixed;
+    top: 13rem;
+    right: 5rem
+}
 @media screen and (max-width: 1500px){
     padding: 5rem 2.4rem;
 }
 @media screen and (max-width:1275px){
     width: 100%;
 }
+@media screen and (max-width: 1000px){
+        .cta{
+            top: 3rem;
+            right:12%;
+            z-index:10;
+        }
+    }
 @media screen and (max-width:800px){
     padding: 2rem 1rem;    
 }
+@media screen and (max-width: 650px){
+        li{
+            margin-left: 1rem;
+            padding: 0.2rem 0rem 0.2rem 0.5rem;
+        }
+        .cta{
+            top: 3.5rem;
+            right: 10%;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+        }
+        
+    }
 `
 const ImageDisplay = styled.div `
 min-height: 50vh;

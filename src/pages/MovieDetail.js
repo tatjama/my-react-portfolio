@@ -99,7 +99,6 @@ justify-content: space-around;
 }
 `
 const AwardStyle = styled.div `
-
 width: 33%;
 &:last-of-type{
     width: 100%;

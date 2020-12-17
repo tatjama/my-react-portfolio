@@ -34,7 +34,7 @@ const MyWork = () => {
                 <Frame4 variants = {slider} ></Frame4>
             </motion.div>
             <Movie>
-                <motion.h1 variants = { fade }>Life in different countries...</motion.h1>
+                <motion.h1 variants = { fade }>1. Life in different countries...</motion.h1>
                 <motion.div variants = { lineAnimation } className = "line"></motion.div>
                 <Link to = "/work/bta">
                     <Hide>
@@ -43,28 +43,28 @@ const MyWork = () => {
                 </Link>
             </Movie>
             <Movie variants = { fade } animate = { controls } initial = "hidden" ref = {element}>
-                <h1>Truly a Masterpiece</h1>
+                <h1>2. Truly a Masterpiece</h1>
                 <motion.div variants = {lineAnimation} className = "line"></motion.div>
                 <Link to = "/work/e-ticket">
                     <img src = {eticket1} alt = "actor"/>
                 </Link>
             </Movie>
             <Movie variants = { fade } animate = { controls1 } initial = "hidden" ref = {element1}>
-                <h1>Play it again, Sam!</h1>
+                <h1>3. Play it again, Sam!</h1>
                 <motion.div variants = {lineAnimation} className = "line"></motion.div>
                 <Link to = "/work/music-player">
                     <img src = {player} alt = "long-play"/>
                 </Link>
             </Movie>
             <Movie variants = { fade } animate = {controls2} initial = "hidden" ref = { element2 }>
-                <h1>Rock-Paper-Scissors</h1>
+                <h1>4. Rock-Paper-Scissors</h1>
                 <motion.div variants = { lineAnimation }  className = "line"></motion.div>
                 <Link to = "/work/rock-paper-scissors">
                     <img src = {rock} alt = "rock-paper-scissors"/>
                 </Link>
             </Movie>
             <Movie variants = { fade } animate = {controls3} initial = "hidden" ref = { element3 }>
-                <h1>Let's be Full of Fun!</h1>
+                <h1>5. Let's be Full of Fun!</h1>
                 <motion.div variants = { lineAnimation }  className = "line"></motion.div>
                 <Link to = "/work/full-fun">
                     <img src = {fullfun} alt = "full-fun"/>

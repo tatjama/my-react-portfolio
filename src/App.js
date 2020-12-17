@@ -1,10 +1,10 @@
 //Global Style
 import GlobalStyle from './components/GlobalStyle';
 //Pages import
-import AboutUs from './pages/AboutUs';
-import OurWork from './pages/OurWork';
+import AboutMe from './pages/AboutMe';
+import MyWork from './pages/MyWork';
 import MovieDetail from './pages/MovieDetail';
-import ContactUs from './pages/ContactUs';
+import ContactMe from './pages/ContactMe';
 import Nav from './components/Nav';
 //Router
 import { Switch, Route, useLocation } from 'react-router-dom';
@@ -21,10 +21,10 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Switch location = {location} key = {location.pathname}>
           <Route path = "/" exact>
-              <AboutUs/> 
+              <AboutMe/> 
           </Route>
           <Route path = "/work" exact>
-            <OurWork/> 
+            <MyWork/> 
           </Route>
           <Route path = "/work/:id">
             <MovieDetail/>
@@ -35,7 +35,7 @@ function App() {
           <Route path = "/rock" render = {() => (window.location = "https://tatjama.github.io/fem-rock-paper-scissors-master/")} />
           <Route path = "/fullfun" render = {() => (window.location = "https://privatniboravak.com")} />
           <Route path = "/contact">
-            <ContactUs/>
+            <ContactMe/>
           </Route>     
           <Route path = "/linkdin" render = {() => (window.location = "https://www.linkedin.com/in/tatjana-markovi%C4%87-919501189/")}/>    
           <Route path = "/github" render = {() => (window.location = "https://github.com/tatjama")}/>

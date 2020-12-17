@@ -11,7 +11,7 @@ import github from '../img/github.png';
 import email from '../img/send-mail.png';
 import cv from '../img/portfolio.png';
 
-const ContactUs = () => {
+const ContactMe = () => {
 
     const [toggle, setToggle] = useState(false)
     return(
@@ -119,4 +119,4 @@ h2{
 }
 `
 
-export default ContactUs;
+export default ContactMe;

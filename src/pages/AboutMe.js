@@ -9,7 +9,7 @@ import {pageAnimation} from '../animation';
 import ScrollTop from '../components/ScrollTop';
 
 
-const AboutUs = () => {
+const AboutMe = () => {
     return(
         <motion.div variants = {pageAnimation} initial = "hidden" animate = "show" exit = "exit">
             <AboutSection/>
@@ -20,4 +20,4 @@ const AboutUs = () => {
     )
 }
 
-export default AboutUs
+export default AboutMe

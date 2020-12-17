@@ -14,7 +14,7 @@ import {pageAnimation, fade, imageAnimation, lineAnimation, slider, sliderContai
 import { UseScroll } from '../components/useScroll';
 import ScrollTop from '../components/ScrollTop';
 
-const OurWork = () => {
+const MyWork = () => {
     const [ element, controls ] = UseScroll();
     const [ element1, controls1 ] = UseScroll();
     const [ element2, controls2 ] = UseScroll();
@@ -131,4 +131,4 @@ const Frame4 = styled(Frame1) `
     background-color: #B19434;
 `
 
-export default OurWork;
+export default MyWork;

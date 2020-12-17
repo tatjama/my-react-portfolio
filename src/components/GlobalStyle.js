@@ -41,7 +41,7 @@ button{
     }
     h4{
          font-weight: bold;
-         font-size: 2rem;
+         font-size: 1.9rem;
     }
     h5{
         font-size:1.5rem;

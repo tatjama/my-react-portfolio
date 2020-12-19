@@ -1,0 +1,18 @@
+[[redirects]]
+  from = "/github"
+  to = "https://github.com/tatjama"
+  status = 200
+  force = true 
+
+[[redirects]] 
+from = "/linkdin" 
+to = "https://www.linkedin.com/in/tatjana-markovi%C4%87-919501189/"
+status = 200
+force = true
+
+[[redirects]]
+from = "/cv"
+to = "https://optimistic-turing-649781.netlify.app/dowloads/tatjana_markovic_frontend_CV.pdf"
+status = 200
+force = true
+ 

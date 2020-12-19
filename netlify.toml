@@ -14,30 +14,34 @@ force = true
 from = "/cv"
 to = "https://optimistic-turing-649781.netlify.app/dowloads/tatjana_markovic_frontend_CV.pdf"
 status = 200
-force = 
+force = true
 
 [[redirects]]
 from = "/bta" 
 to = "https://business-travel-agency-react.vercel.app/"
 status = 200
+force = true
 
 [[redirects]]
 from  =  "/eticket" 
 to  = "https://tatjama.github.io/e-ticket/"
 status = 200
+force = true
 
 [[redirects]]
 from = "/player" 
 to = "https://tanja-music.vercel.app/"
 status = 200
+force = true
 
 [[redirects]]
 from = "/rock"
 to = "https://tatjama.github.io/fem-rock-paper-scissors-master/"
 status = 200
+force = true
 
 [[redirects]]
 from = "/fullfun"
 to = "https://privatniboravak.com"
 status = 200
-          
+force = true          

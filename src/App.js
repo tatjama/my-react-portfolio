@@ -29,7 +29,7 @@ function App() {
           <Route path = "/work/:id">
             <MovieDetail/>
           </Route>
-          <Route path = "/bta" render = {() => (window.location = "https://business-travel-agency-react.vercel.app/")}/>
+          <Route path = "/bta" render = {() => (window.location = "https://bta-react.vercel.app/")}/>
           <Route path = "/eticket" render = {() => (window.location = "https://tatjama.github.io/e-ticket/")} />
           <Route path = "/player" render = {() => (window.location = "https://tanja-music.vercel.app/")} />
           <Route path = "/rock" render = {() => (window.location = "https://tatjama.github.io/fem-rock-paper-scissors-master/")} />

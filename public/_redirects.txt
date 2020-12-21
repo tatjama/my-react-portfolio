@@ -1,3 +1,0 @@
- /github      https://github.com/tatjama
- /linkdin     https://www.linkedin.com/in/tatjana-markovi%C4%87-919501189/
- /cv          /dowloads/tatjana_markovic_frontend_CV.pdf

@@ -7,6 +7,7 @@ import css from '../img/css.svg';
 import sass from '../img/sass.svg';
 import react from '../img/react.svg';
 import dm from '../img/010-smartphone.svg';
+import angular from '../img/angular.svg';
 //Styles
 import {About, Description, Image} from '../styles';
 import styled from 'styled-components';
@@ -39,6 +40,13 @@ const ServicesSection = () => {
                     </Card>
                     <Card>
                         <div className = "icon">
+                            <img src = {angular} alt = "money-icon"/>
+                            
+                        </div>
+                        <h3>Angular</h3>
+                    </Card>
+                    <Card>
+                        <div className = "icon">
                             <img src = {css} alt = "digital-marketing-icon"/>
                             
                         </div>
@@ -58,13 +66,7 @@ const ServicesSection = () => {
                         </div>
                         <h3>Marketing</h3>
                     </Card>
-                    <Card>
-                        <div className = "icon">
-                            <img src = {next} alt = "money-icon"/>
-                            
-                        </div>
-                        <h3>Next</h3>
-                    </Card>
+                    
                     
                 </Cards>                
             </Description>

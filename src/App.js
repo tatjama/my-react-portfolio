@@ -33,6 +33,7 @@ function App() {
           <Route path = "/ice-warming" render = {() => (window.location = "https://ice-warming.netlify.app/")}/>
           <Route path = "/eticket" render = {() => (window.location = "https://tatjama.github.io/e-ticket/")} />
           <Route path = "/player" render = {() => (window.location = "https://tanja-music.vercel.app/")} />
+          <Route path = "/trioraha" render = {() => (window.location = "https://trioraha.com")} />
           <Route path = "/rock" render = {() => (window.location = "https://tatjama.github.io/fem-rock-paper-scissors-master/")} />
           <Route path = "/fullfun" render = {() => (window.location = "https://privatniboravak.com")} />
           <Route path = "/contact">

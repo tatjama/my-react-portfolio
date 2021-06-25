@@ -7,6 +7,7 @@ import suitecases from '../img/suitcases.png';
 import eticket1 from '../img/e-ticket1.png';
 import icewarming1 from '../img/iceWarming1.png';
 import player from '../img/music-player.jpg';
+import trioraha from '../img/trioraha1.png';
 import rock from '../img/desktop-step-1.jpg';
 import fullfun from '../img/fullfun.png';
 //Animations
@@ -21,6 +22,7 @@ const MyWork = () => {
     const [ element2, controls2 ] = UseScroll();
     const [ element3, controls3 ] = UseScroll();
     const [ element4, controls4 ] = UseScroll();
+    const [ element5, controls5 ] = UseScroll();
     return(
         <Work 
             variants = {pageAnimation} 
@@ -67,14 +69,21 @@ const MyWork = () => {
             </Movie>
             
             <Movie variants = { fade } animate = {controls3} initial = "hidden" ref = { element3 }>
-                <h1>5. Let's be Full of Fun!</h1>
+                <h1>5. In Vino Veritas!</h1>
+                <motion.div variants = { lineAnimation }  className = "line"></motion.div>
+                <Link to = "/work/trioraha">
+                    <img src = {trioraha} alt = "tri oraha"/>
+                </Link>
+            </Movie>
+            <Movie variants = { fade } animate = {controls4} initial = "hidden" ref = { element4 }>
+                <h1>6. Let's be Full of Fun!</h1>
                 <motion.div variants = { lineAnimation }  className = "line"></motion.div>
                 <Link to = "/work/full-fun">
                     <img src = {fullfun} alt = "full-fun"/>
                 </Link>
             </Movie>
-            <Movie variants = { fade } animate = {controls4} initial = "hidden" ref = { element4 }>
-                <h1>6. Rock-Paper-Scissors</h1>
+            <Movie variants = { fade } animate = {controls5} initial = "hidden" ref = { element5 }>
+                <h1>7. Rock-Paper-Scissors</h1>
                 <motion.div variants = { lineAnimation }  className = "line"></motion.div>
                 <Link to = "/work/rock-paper-scissors">
                     <img src = {rock} alt = "rock-paper-scissors"/>

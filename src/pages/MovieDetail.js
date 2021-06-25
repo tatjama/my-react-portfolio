@@ -10,6 +10,7 @@ import BtaSection from '../components/BtaSection';
 import IceWarming from '../components/IceWarming';
 import ETicket from '../components/ETicket';
 import PlayerSection from '../components/PlayerSection';
+import TriOraha from '../components/TriOraha';
 import FullFunSection from '../components/FullFunSection';
 import RockPaperScissorsSection from '../components/RockPaperScissorsSection';
 
@@ -205,8 +206,9 @@ const AwardContent = ({title, description}) => {
                 : (description === "eticket")?  <ETicket/> 
                 : (description === "ice-warming")?  <IceWarming/> 
                 : (description === "player")? <PlayerSection/> 
-                : (description === "rock") ? <RockPaperScissorsSection/>
+                : (description === "trioraha") ? <TriOraha/>
                 : (description === "fullfun") ? <FullFunSection/> 
+                : (description === "rock") ? <RockPaperScissorsSection/>
                 : <div></div>
                 }
            </>

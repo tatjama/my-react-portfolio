@@ -11,6 +11,8 @@ import player1 from './img/music-player.jpg';
 import player2 from './img/player.png';
 import rock1 from './img/desktop-rules-modal-bonus.jpg';
 import rock2 from './img/desktop-step-1-bonus.jpg';
+import trioraha2 from './img/trioraha2.png';
+import trioraha3 from './img/trioraha3.png';
 import fullfun1 from './img/fullfun1.png';
 import fullfun2 from './img/ff_background_srednji.png';
 //import BtaSection from './components/BtaSection;'
@@ -141,6 +143,33 @@ export const MovieState = () => {
           section: "player"
         }
       ,
+    },
+    {
+      title: "Tri Oraha",
+      mainImg: trioraha2,
+      url: "/work/trioraha",
+      secondaryImg: trioraha3,
+      awards: [
+        {
+          title: "In Vino Veritas!",
+          description:
+            "Tri Oraha is a presentation website for vinery",
+        },
+        {
+          title: "Technics:",
+          description:
+            "JavaScript, HTML, CSS,  Web hosting, responsive design",
+        },
+        {
+          title: "Languages:",
+          description:
+            "1.Serbian, 2. Russian, 3. English",
+        },
+      ],
+      content: {
+        title: "About: ",
+        section: "trioraha"
+      }
     },
     {
       title: "Full Fun",

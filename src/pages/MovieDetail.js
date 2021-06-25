@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import { pageAnimation} from '../animation';
 //Section-pages
 import BtaSection from '../components/BtaSection';
+import IceWarming from '../components/IceWarming';
 import ETicket from '../components/ETicket';
 import PlayerSection from '../components/PlayerSection';
 import FullFunSection from '../components/FullFunSection';
@@ -200,9 +201,13 @@ const AwardContent = ({title, description}) => {
             </h3>
             <div className = "line"></div>
             {toggle && <>
-                {(description === "bta")? <BtaSection/>: (description === "eticket")?  <ETicket/> 
-                : (description === "player")? <PlayerSection/> : (description === "rock") ? <RockPaperScissorsSection/>
-                : (description === "fullfun") ? <FullFunSection/> : <div></div>
+                {(description === "bta")? <BtaSection/>
+                : (description === "eticket")?  <ETicket/> 
+                : (description === "ice-warming")?  <IceWarming/> 
+                : (description === "player")? <PlayerSection/> 
+                : (description === "rock") ? <RockPaperScissorsSection/>
+                : (description === "fullfun") ? <FullFunSection/> 
+                : <div></div>
                 }
            </>
            }        

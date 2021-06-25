@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 //Images
 import suitecases from '../img/suitcases.png';
 import eticket1 from '../img/e-ticket1.png';
+import icewarming1 from '../img/iceWarming1.png';
 import player from '../img/music-player.jpg';
 import rock from '../img/desktop-step-1.jpg';
 import fullfun from '../img/fullfun.png';
@@ -19,6 +20,7 @@ const MyWork = () => {
     const [ element1, controls1 ] = UseScroll();
     const [ element2, controls2 ] = UseScroll();
     const [ element3, controls3 ] = UseScroll();
+    const [ element4, controls4 ] = UseScroll();
     return(
         <Work 
             variants = {pageAnimation} 
@@ -43,31 +45,39 @@ const MyWork = () => {
                 </Link>
             </Movie>
             <Movie variants = { fade } animate = { controls } initial = "hidden" ref = {element}>
-                <h1>2. Truly a Masterpiece</h1>
+                <h1>2. Ice Warming</h1>
+                <motion.div variants = {lineAnimation} className = "line"></motion.div>
+                <Link to = "/work/ice-warming">
+                    <img src = {icewarming1} alt = "actor"/>
+                </Link>                
+            </Movie>
+            <Movie variants = { fade } animate = { controls1 } initial = "hidden" ref = {element1}>
+                <h1>3. Truly a Masterpiece</h1>
                 <motion.div variants = {lineAnimation} className = "line"></motion.div>
                 <Link to = "/work/e-ticket">
                     <img src = {eticket1} alt = "actor"/>
                 </Link>
             </Movie>
-            <Movie variants = { fade } animate = { controls1 } initial = "hidden" ref = {element1}>
-                <h1>3. Play it again, Sam!</h1>
+            <Movie variants = { fade } animate = { controls2 } initial = "hidden" ref = {element2}>
+                <h1>4. Play it again, Sam!</h1>
                 <motion.div variants = {lineAnimation} className = "line"></motion.div>
                 <Link to = "/work/music-player">
                     <img src = {player} alt = "long-play"/>
                 </Link>
             </Movie>
-            <Movie variants = { fade } animate = {controls2} initial = "hidden" ref = { element2 }>
-                <h1>4. Rock-Paper-Scissors</h1>
-                <motion.div variants = { lineAnimation }  className = "line"></motion.div>
-                <Link to = "/work/rock-paper-scissors">
-                    <img src = {rock} alt = "rock-paper-scissors"/>
-                </Link>
-            </Movie>
+            
             <Movie variants = { fade } animate = {controls3} initial = "hidden" ref = { element3 }>
                 <h1>5. Let's be Full of Fun!</h1>
                 <motion.div variants = { lineAnimation }  className = "line"></motion.div>
                 <Link to = "/work/full-fun">
                     <img src = {fullfun} alt = "full-fun"/>
+                </Link>
+            </Movie>
+            <Movie variants = { fade } animate = {controls4} initial = "hidden" ref = { element4 }>
+                <h1>6. Rock-Paper-Scissors</h1>
+                <motion.div variants = { lineAnimation }  className = "line"></motion.div>
+                <Link to = "/work/rock-paper-scissors">
+                    <img src = {rock} alt = "rock-paper-scissors"/>
                 </Link>
             </Movie>
             <ScrollTop/>

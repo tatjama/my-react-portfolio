@@ -3,6 +3,10 @@ import bta1 from "./img/suitcases.png";
 import bta2 from "./img/enjoy.png";
 import eticket1 from './img/e-ticket1.png';
 import eticket2 from './img/e-ticket2.png';
+import icewarming1 from './img/iceWarming1.png';
+import icewarming2 from './img/iceWarming2.png';
+import iceWarmingSports from './img/iceWarmingSports.png';
+import icewarming3 from './img/iceWarming3.png';
 import player1 from './img/music-player.jpg';
 import player2 from './img/player.png';
 import rock1 from './img/desktop-rules-modal-bonus.jpg';
@@ -48,6 +52,34 @@ export const MovieState = () => {
          
         },
       
+    },
+    {
+      title: "Ice Warming",
+      mainImg: iceWarmingSports,
+      url: "/work/ice-warming",
+      secondaryImg: icewarming3,
+      awards: [
+        {
+          title: "Ice Warming",
+          description:
+            `Ice Warming is shop create by Vanilla ES6 Javascript. Video Landing page, Glass design `,
+        },
+        {
+          title: "Technics:",
+          description:
+            "ES6 JavaScript Vanilla, HTML, CSS responsive design, session storage and local storage, Contentful headless API creator",
+        },
+        {
+          title: "No Authorization:",         
+        
+        },
+      ],
+      content: 
+        {
+          title: "About: ",
+          section:
+          "ice-warming"
+        },
     },
     {
       title: "E-ticket",

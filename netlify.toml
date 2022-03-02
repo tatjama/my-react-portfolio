@@ -36,12 +36,12 @@ force = true
 
 [[redirects]]
 from = "/rock"
-to = "https://tatjama.github.io/fem-rock-paper-scissors-master/"
+to = "https://bonus-zadatak8-rock-paper-scissors.vercel.app/"
 status = 200
 force = true
 
 [[redirects]]
 from = "/fullfun"
-to = "https://privatniboravak.com"
+to = "https://fullfun.vercel.app/"
 status = 200
 force = true          

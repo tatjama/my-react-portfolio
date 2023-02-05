@@ -52,7 +52,7 @@ const ContactMe = () => {
                     <Link className="contact-me" target="_blank" to="/cv">
                         <Social variants = {titleAnimation}>
                             <Circle>
-                                <img src={email} alt="email"/>
+                                <img src={cv} alt="cv"/>
                             </Circle>
                                 <h2>Check my CV</h2>
                         </Social>
@@ -61,7 +61,7 @@ const ContactMe = () => {
                 <Hide>
                     <Social variants = {titleAnimation} onClick = {() => setToggle(!toggle)} >
                         <Circle>
-                            <img src = {cv} alt = "cv"/>
+                            <img src = {email} alt = "email"/>
                         </Circle>
                             <h2>Contact me by Email</h2>
                     </Social>                    

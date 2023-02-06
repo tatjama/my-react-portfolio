@@ -21,11 +21,12 @@ h2{
     font-weight: lighter;
 }
 @media screen and (max-width: 1300px){
-    padding: 0px;
     button{
         margin: 2rem 0rem 5rem 0rem;
     }
-
+}
+@media screen and (max-width: 1000px){
+    padding: 0;
 }
 `
 export const Image = styled.div`
